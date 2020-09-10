@@ -4,7 +4,8 @@ version: ~> 1.0
 services:
 - postgresql
 
+before_script:
+- appraisal generate --travis
+
 script:
-- ./bin/setup
-- echo "is this hitting?"
 - bundle exec rspec && bundle exec appraisal rspec
