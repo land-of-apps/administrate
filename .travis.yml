@@ -5,6 +5,7 @@ services:
 - postgresql
 
 before_script:
+- gem install foreman
 - ./bin/setup
 
 script:
