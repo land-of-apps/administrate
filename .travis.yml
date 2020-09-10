@@ -5,7 +5,7 @@ services:
 - postgresql
 
 before_script:
-- appraisal generate --travis
+- ./bin/appraisal generate --travis
 
 script:
 - bundle exec rspec && bundle exec appraisal rspec
