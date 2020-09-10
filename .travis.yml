@@ -5,6 +5,7 @@ services:
 - postgresql
 
 before_script:
+- ./bin/setup
 - ./bin/appraisal generate --travis
 
 script:
