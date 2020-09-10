@@ -4,6 +4,9 @@ version: ~> 1.0
 services:
 - postgresql
 
+addons:
+  chrome: stable
+
 before_script:
 - travis_wait ./bin/setup
 
