@@ -4,9 +4,6 @@ version: ~> 1.0
 services:
 - postgresql
 
-before_script:
-- gem install foreman
-- ./bin/setup
-
 script:
+- ./bin/setup
 - bundle exec rspec && bundle exec appraisal rspec
