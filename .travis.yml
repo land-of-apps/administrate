@@ -2,21 +2,28 @@
 version: ~> 1.0
 
 services:
-- postgresql
+  - postgresql
 
 addons:
   chrome: stable
 
-before_install:
-- gem install selenium-webdriver
-- wget -N https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P ~/Downloads
-- unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
-- sudo mv -f ~/Downloads/chromedriver /usr/local/share/
-- sudo chmod +x /usr/local/share/chromedriver
-- sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-- sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 
-- travis_wait ./bin/setup
+# install selenium chrome driver instructions from
+# https://github.com/yizeng/setup-selenium-webdriver-ruby-project-on-travis-ci/blob/master/.travis.yml
+
+before_install:
+  - gem install selenium-webdriver
+  #- wget -N https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P ~/Downloads
+  
+  - wget -N https://chromedriver.storage.googleapis.com/index.html?path=86.0.4240.22/chromedriver_linux64.zip -P ~/Downloads
+
+  - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
+  - sudo mv -f ~/Downloads/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+
+  - travis_wait ./bin/setup
 
 script:
 - bundle exec rspec && bundle exec appraisal rspec
