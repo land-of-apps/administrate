@@ -8,8 +8,8 @@ addons:
   chrome: stable
 
 before_script:
-- wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-- unzip chromedriver_linux64.zip /usr/bin/google-chrome
+- wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip -P ~/
+- unzip chromedriver_linux64.zip -d ~/
 - export CHROME_BIN=chromium-browser
 - travis_wait ./bin/setup
 
