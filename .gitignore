@@ -27,3 +27,5 @@ pkg
 gemfiles/.bundle/
 .yardoc
 /doc
+vendor/*
+gemfiles/vendor/*
