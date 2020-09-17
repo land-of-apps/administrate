@@ -1,3 +1,5 @@
+require "appmap/rspec"
+
 require "webmock/rspec"
 
 # http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
