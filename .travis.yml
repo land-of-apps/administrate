@@ -13,11 +13,13 @@ addons:
 
 before_install:
   - gem install selenium-webdriver
-  #- wget -N https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P ~/Downloads
+  # - wget -N https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P ~/Downloads
+  # - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
   
   - wget -N https://chromedriver.storage.googleapis.com/index.html?path=86.0.4240.22/chromedriver_linux64.zip -P ~/Downloads
+  - unzip ~/Downloads/index.html?path=86.0.4240.22%2Fchromedriver_linux64.zip -d ~/Downloads
 
-  - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
+
   - sudo mv -f ~/Downloads/chromedriver /usr/local/share/
   - sudo chmod +x /usr/local/share/chromedriver
   - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
