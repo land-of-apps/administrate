@@ -10,11 +10,10 @@ services:
 addons:
   chrome: stable
 
-
 # install selenium chrome driver instructions from
 # https://github.com/yizeng/setup-selenium-webdriver-ruby-project-on-travis-ci/blob/master/.travis.yml
 
-before_install:
+before_script:
   - gem install selenium-webdriver
   - wget -N https://chromedriver.storage.googleapis.com/85.0.4183.38/chromedriver_linux64.zip -P ~/Downloads
   - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
