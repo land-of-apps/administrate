@@ -9,10 +9,8 @@ addons:
 
 before_script:
 - wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-- unzip chromedriver_linux64.zip -d /usr/bin/google-chrome
+- unzip chromedriver_linux64.zip -o /usr/bin/google-chrome
 - export CHROME_BIN=chromium-browser
-
-
 - travis_wait ./bin/setup
 
 script:
