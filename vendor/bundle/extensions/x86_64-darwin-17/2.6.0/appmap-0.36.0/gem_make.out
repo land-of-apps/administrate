@@ -1,0 +1,15 @@
+current directory: /Users/jaredkreppein/Appland/code/ruby/appmaps/administrate/administrate/vendor/bundle/gems/appmap-0.36.0/ext/appmap
+/Users/jaredkreppein/.rbenv/versions/2.6.3/bin/ruby -I /Users/jaredkreppein/.rbenv/versions/2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201027-75653-1x1arhj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jaredkreppein/Appland/code/ruby/appmaps/administrate/administrate/vendor/bundle/gems/appmap-0.36.0/ext/appmap
+make "DESTDIR=" clean
+
+current directory: /Users/jaredkreppein/Appland/code/ruby/appmaps/administrate/administrate/vendor/bundle/gems/appmap-0.36.0/ext/appmap
+make "DESTDIR="
+compiling appmap.c
+linking shared-object appmap/appmap.bundle
+
+current directory: /Users/jaredkreppein/Appland/code/ruby/appmaps/administrate/administrate/vendor/bundle/gems/appmap-0.36.0/ext/appmap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 appmap.bundle ./.gem.20201027-75653-1siszqe/appmap

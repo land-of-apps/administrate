@@ -1,0 +1,17 @@
+.DS_Store
+/html/
+.bundle
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+tmp/
+vendor
+node_modules
+Gemfile.lock
+appmap.json
+.vscode
+.byebug_history
+/lib/appmap/appmap.bundle
