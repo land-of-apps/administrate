@@ -1,8 +1,9 @@
+# --- APPMAP ---
+gem 'appmap'
+
 source 'https://rubygems.org'
 
 gemspec
-
-gem 'appmap', github: 'applandinc/appmap-ruby', branch: 'master'
 
 gem "administrate-field-image"
 gem "autoprefixer-rails"

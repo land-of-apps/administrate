@@ -1,5 +1,5 @@
 name: administrate
 packages:
-- path: app/controllers
-- path: app/helpers
-- path: lib
+  - path: app/controllers
+  - path: app/helpers
+  - path: lib

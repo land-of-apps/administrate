@@ -1,4 +1,5 @@
-require "appmap/rspec"
+# --- APPMAP ---
+require 'appmap/rspec'
 
 require "webmock/rspec"
 
