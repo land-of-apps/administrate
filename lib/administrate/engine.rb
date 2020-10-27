@@ -6,6 +6,9 @@ require "sassc-rails"
 require "selectize-rails"
 require "sprockets/railtie"
 
+# appmap
+require "appmap/railtie"
+
 require "administrate/page/form"
 require "administrate/page/show"
 require "administrate/page/collection"
